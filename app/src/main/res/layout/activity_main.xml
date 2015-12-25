@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@color/dark_blue_400"
+    >
+
+    <ImageView android:id="@+id/ImageView01"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description"
+        android:layout_marginTop="20dp"
+        android:background="@color/dark_blue_light"
+        android:layout_gravity="center">
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/choosePhotoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/choose_photo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp" />
+
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:layout_above="@+id/uploadPhotoButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/uploadPhotoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/upload_photo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
